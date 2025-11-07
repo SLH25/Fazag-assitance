@@ -20,7 +20,7 @@ const AboutContact = () => {
   };
 
   return (
-    <section className="py-16 bg-white dark:bg-gray-900">
+    <section className="py-16 bg-gradient-to-tr from-emerald-50 via-white to-emerald-900/60 dark:from-gray-900 dark:via-gray-800 dark:to-emerald-900/60">
       <div className="max-w-3xl mx-auto px-6 sm:px-8 lg:px-12">
         <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 dark:text-white mb-4">Contactez-nous</h2>
         <p className="text-gray-600 dark:text-gray-300 mb-8">Remplissez le formulaire ci-dessous et nous reviendrons vers vous sous 24h.</p>

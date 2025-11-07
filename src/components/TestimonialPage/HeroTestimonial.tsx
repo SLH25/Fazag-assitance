@@ -3,7 +3,7 @@ import { FaQuoteLeft } from 'react-icons/fa';
 
 const HeroTestimonial = () => {
   return (
-    <header className="bg-gradient-to-r from-emerald-50 to-white dark:from-gray-900 dark:to-gray-800">
+    <header className="bg-gradient-to-br from-emerald-50 via-white to-emerald-900/60 dark:from-gray-900 dark:via-gray-800 dark:to-emerald-900/60">
       <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12 py-20">
         <motion.div
           initial={{ opacity: 0, y: 12 }}

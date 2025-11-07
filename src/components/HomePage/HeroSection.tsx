@@ -84,7 +84,7 @@ const Hero = () => {
   return (
     <section 
   ref={ref}
-  className="relative min-h-screen pt-20 bg-gradient-to-br from-emerald-50 via-white to-emerald-900/20 dark:from-gray-900 dark:via-gray-800 dark:to-emerald-900/20 flex items-center justify-center px-4 sm:px-6 lg:px-8"
+  className="relative min-h-screen pt-20 bg-gradient-to-br from-emerald-50 via-white to-emerald-900/60 dark:from-gray-900 dark:via-gray-800 dark:to-emerald-900/60 flex items-center justify-center px-4 sm:px-6 lg:px-8"
 >
       <motion.div 
         className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-center"

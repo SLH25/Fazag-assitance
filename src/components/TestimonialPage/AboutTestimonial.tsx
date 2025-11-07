@@ -20,7 +20,7 @@ const AboutTestimonial = () => {
   ];
 
   return (
-    <section className="py-16 bg-white dark:bg-gray-900">
+    <section className="py-16 bg-gradient-to-tr from-emerald-50 via-white to-emerald-900/60 dark:from-gray-900 dark:via-gray-800 dark:to-emerald-900/60">
       <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12">
         <motion.div className="grid md:grid-cols-3 gap-8" initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} transition={{ duration: 0.6 }} viewport={{ once: true }}>
           {TESTIMONIALS.map((t, i) => (

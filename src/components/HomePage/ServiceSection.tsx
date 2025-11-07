@@ -122,17 +122,17 @@ const ServicesSection = () => {
     }
   };
 
-  const itemVariants: Variants = {
-    hidden: { y: 50, opacity: 0 },
-    visible: {
-      y: 0,
-      opacity: 1,
-      transition: {
-        duration: 0.6,
-        ease: "easeOut"
-      }
-    }
-  };
+  // const itemVariants: Variants = {
+  //   hidden: { y: 50, opacity: 0 },
+  //   visible: {
+  //     y: 0,
+  //     opacity: 1,
+  //     transition: {
+  //       duration: 0.6,
+  //       ease: "easeOut"
+  //     }
+  //   }
+  // };
 
   const cardVariants: Variants = {
     hidden: { y: 30, opacity: 0 },

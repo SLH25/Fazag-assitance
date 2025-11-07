@@ -1,8 +1,8 @@
 import { useState, useEffect } from 'react';
 import { NavLink, useNavigate } from 'react-router-dom';
 import { FaSun, FaMoon, FaBars, FaTimes, FaSearch } from 'react-icons/fa';
-import LogoLight from '../assets/Logolight.png'; 
-import LogoDark from '../assets/Logodark.png';
+import LogoLight from '../assets/LogoLight.png'; 
+import LogoDark from '../assets/LogoDark.png';
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);

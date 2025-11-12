@@ -19,7 +19,7 @@ const AboutProfile = () => {
   const displayedDomains = searchQuery === '' ? ALL_DOMAINS.slice(0, 3) : filteredDomains;
 
   return (
-    <section className="py-16 bg-white dark:bg-gray-900">
+    <section className="py-16 bg-gradient-to-tr from-emerald-50 via-white to-emerald-900/60 dark:from-gray-900 dark:via-gray-800 dark:to-emerald-900/60">
       <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12">
         <motion.div 
           initial={{ opacity: 0, y: 12 }} 
@@ -33,7 +33,7 @@ const AboutProfile = () => {
               <p className="text-gray-600 dark:text-gray-300">Explorez des catégories de talents soigneusement sélectionnées.</p>
             </div>
             <Link
-              to="/talents/domains"
+              to="/profils/domains"
               className="inline-flex items-center mt-4 sm:mt-0 text-emerald-500 hover:text-emerald-600 font-medium"
             >
               Voir tous les domaines

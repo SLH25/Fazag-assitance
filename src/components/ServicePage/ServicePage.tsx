@@ -6,8 +6,8 @@ const ServicePage = () => {
   return (
     <div>
       <HeroService />
-      <AboutService />
       <MainService />
+      <AboutService />
     </div>
   );
 };

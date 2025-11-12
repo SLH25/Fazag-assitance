@@ -29,7 +29,7 @@ const HeroAbout = () => {
                 En savoir plus
               </a>
               <a
-                href="/talents"
+                href="/Profils"
                 className="inline-flex items-center gap-2 border border-emerald-500 text-emerald-500 px-6 py-3 rounded-lg font-medium hover:bg-emerald-50 dark:hover:bg-emerald-900 transition"
                 aria-label="Voir les talents"
               >

@@ -6,11 +6,10 @@ import { PROFILES } from "./profilesData";
 import { Mail, Phone, MapPin, ArrowRight, Star, Calendar } from "lucide-react";
 
 const AllProfilesPage = () => {
-  const visible = PROFILES;
   const [q, setQ] = useState('');
 
   const filteredProfil = useMemo (()=>{
-    const query =q.toLowerCase();
+    const query = q.trim().toLowerCase();
     return PROFILES.filter(Profil=>
       Profil.name.toLowerCase().includes(query) ||
       Profil.phone?.toLowerCase().includes(query) ||
@@ -19,7 +18,7 @@ const AllProfilesPage = () => {
     );
   },[q])
    // Si pas de recherche, on montre juste les 3 premiers domaines
-    const displayProfil = q === '' ? PROFILES : filteredProfil;
+    const displayProfil = q.trim() === '' ? PROFILES : filteredProfil;
   
 
   const containerVariants: Variants = {
@@ -80,6 +79,7 @@ const AllProfilesPage = () => {
           />
         </div>
 
+      
         <motion.div
           className="grid sm:grid-cols-2 lg:grid-cols-3 gap-8 mb-12"
           variants={containerVariants}
@@ -87,7 +87,8 @@ const AllProfilesPage = () => {
           whileInView="visible"
           viewport={{ once: true }}
         >
-          {visible.map((profile,) => (
+          {displayProfil.map((profile) => (
+            
             <motion.article
               key={profile.id}
               variants={cardVariants}
@@ -226,9 +227,10 @@ const AllProfilesPage = () => {
           ))}
         </motion.div>
 
-
       </div>
     </section>
   );
 };
 export default AllProfilesPage;
+
+// )) }

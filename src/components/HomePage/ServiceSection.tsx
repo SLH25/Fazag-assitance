@@ -10,6 +10,7 @@ import {
   FaArrowRight,
   FaCheck
 } from 'react-icons/fa';
+import { Link } from 'react-router-dom';
 
 // Données statiques
 const SERVICES = [
@@ -217,10 +218,10 @@ const ServicesSection = () => {
                   ))}
                 </ul>
                 
-                <button className="w-full group/btn bg-gray-50 dark:bg-gray-700 hover:bg-emerald-500 dark:hover:bg-emerald-600 text-gray-700 dark:text-gray-300 hover:text-white py-3 rounded-xl font-semibold transition-all duration-300 flex items-center justify-center gap-2">
-                  En savoir plus
+                {/* <Link to="/services" className="w-full inline-flex group/btn items-center justify-center bg-gray-50 dark:bg-gray-700 hover:bg-emerald-500 dark:hover:bg-emerald-600 text-gray-700 dark:text-gray-300 hover:text-white py-3 rounded-xl font-semibold transition-all duration-300 gap-2">
+                  <span>En savoir plus</span>
                   <FaArrowRight className="group-hover/btn:translate-x-1 transition-transform duration-300" />
-                </button>
+                </Link> */}
               </div>
             </motion.div>
           ))}
@@ -289,13 +290,13 @@ const ServicesSection = () => {
               Rejoignez les entreprises qui font confiance à Fazag Assistance pour leurs recrutements internationaux
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <button className="bg-white text-emerald-600 hover:bg-gray-100 px-8 py-4 rounded-xl font-semibold text-lg transition-all duration-300 transform hover:scale-105 flex items-center justify-center gap-3">
-                Commencer maintenant
+              <Link to="/services" className=" bg-white text-emerald-600 hover:bg-gray-100 px-8 py-4 rounded-xl font-semibold text-lg transition-all duration-300 transform hover:scale-105 flex items-center justify-center gap-3">
+                <span>Commencer maintenant</span>
                 <FaArrowRight className="group-hover:translate-x-1 transition-transform duration-300" />
-              </button>
-              <button className="border-2 border-white text-white hover:bg-white/10 px-8 py-4 rounded-xl font-semibold text-lg transition-all duration-300 transform hover:scale-105">
-                Contacter un expert
-              </button>
+              </Link>
+              <Link to="/contact" className="inline-flex border-2 border-white text-white hover:bg-white/10 px-8 py-4 rounded-xl font-semibold text-lg transition-all duration-300 transform hover:scale-105 items-center justify-center">
+                <span>Contacter un expert</span>
+              </Link>
             </div>
           </div>
         </motion.div>

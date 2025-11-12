@@ -114,14 +114,12 @@ const AboutSection = () => {
               Votre pont vers l'opportunité mondiale
             </h3>
             <p className="text-lg text-gray-600 dark:text-gray-300 mb-6 leading-relaxed">
-              Fondée avec la vision de démocratiser l'accès aux opportunités internationales, 
-              <strong className="text-emerald-500"> Fazag Assistance</strong> s'est imposée comme 
-              le partenaire de confiance pour les talents camerounais et les recruteurs étrangers.
+             Notre idée maîtresse est simple mais puissante : connecter les talents du Cameroun au reste du monde. Dans un contexte globalisé où la compétence n’a plus de frontières, Fazag met en lumière des professionnels qualifiés – assistants virtuels, communicants, gestionnaires, infographes, informaticiens – prêts à servir avec rigueur, efficacité et excellence.
+
             </p>
             <p className="text-lg text-gray-600 dark:text-gray-300 mb-8 leading-relaxed">
-              Notre plateforme révolutionne le recrutement en connectant directement les 
-              professionnels qualifiés du Cameroun avec des entreprises à la recherche 
-              d'expertise, de fiabilité et d'innovation.
+             Nous accompagnons les entreprises et startups internationales à externaliser intelligemment leurs besoins administratifs, commerciaux ou techniques, tout en valorisant les savoir-faire locaux.
+
             </p>
 
             {/* Points forts de l'équipe */}
@@ -222,7 +220,8 @@ const AboutSection = () => {
               <p className="text-lg opacity-90 leading-relaxed">
                 Nous aspirons à devenir la plateforme de référence pour le recrutement 
                 de talents africains à l'échelle mondiale, en créant des ponts durables 
-                entre le potentiel camerounais et les opportunités internationales.
+                entre le potentiel camerounais et les opportunités internationales.Une collaboration gagnant-gagnant entre le local et le global.  
+
               </p>
             </div>
             <div className="grid grid-cols-2 gap-4">

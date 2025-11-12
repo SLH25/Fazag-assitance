@@ -2,6 +2,7 @@ import { motion } from 'framer-motion';
 import type { Variants } from 'framer-motion';
 import { useEffect, useRef, useState } from 'react';
 import { FaPlay, FaArrowRight} from 'react-icons/fa';
+import { Link } from 'react-router-dom';
 
 import Heroimage from '../../assets/Heroimage.jpeg'; // Assurez-vous d'avoir une image appropriée
 
@@ -107,38 +108,23 @@ const Hero = () => {
             variants={itemVariants}
             className="text-xl text-gray-600 dark:text-gray-300 mb-8 leading-relaxed max-w-2xl"
           >
-            Fazag Assistance met en relation les professionnels qualifiés du Cameroun 
-            (informaticiens, juristes, infographes, etc.) avec des recruteurs internationaux. 
-            Votre pont vers l'excellence mondiale.
+            Bienvenue sur le site officiel de Fazag Assistance, la passerelle entre l’expertise camerounaise et les besoins des entreprises à l’international.
+
           </motion.p>
 
           <motion.div
             variants={buttonVariants}
             className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start"
           >
-            <motion.button
-              whileHover={{ 
-                scale: 1.05,
-                transition: { duration: 0.2 }
-              }}
-              whileTap={{ scale: 0.95 }}
-              className="group bg-emerald-600 hover:bg-emerald-700 text-white px-8 py-4 rounded-xl font-semibold text-lg transition-all duration-300 transform hover:scale-105 hover:shadow-2xl shadow-emerald-500/25 flex items-center justify-center gap-3"
-            >
-              Découvrir nos services
+            <Link to="/services" className="group bg-emerald-600 hover:bg-emerald-700 text-white px-8 py-4 rounded-xl font-semibold text-lg transition-all duration-300 transform hover:scale-105 hover:shadow-2xl shadow-emerald-500/25 flex items-center justify-center gap-3">
+              <span>Découvrir nos services</span>
               <FaArrowRight className="group-hover:translate-x-1 transition-transform duration-300" aria-hidden="true" />
-            </motion.button>
-            
-            <motion.button
-              whileHover={{ 
-                scale: 1.05,
-                transition: { duration: 0.2 }
-              }}
-              whileTap={{ scale: 0.95 }}
-               className="group border-2 border-emerald-400 text-emerald-400 hover:bg-emerald-400/10 px-8 py-4 rounded-xl font-semibold text-lg transition-all duration-300 transform hover:scale-105 flex items-center justify-center gap-3 backdrop-blur-sm"
-            >
+            </Link>
+
+            <Link to="/Profils" className="group border-2 border-emerald-400 text-emerald-400 hover:bg-emerald-400/10 px-8 py-4 rounded-xl font-semibold text-lg transition-all duration-300 transform hover:scale-105 flex items-center justify-center gap-3 backdrop-blur-sm">
               <FaPlay className="text-sm" aria-hidden="true" />
-              Voir les Profils
-            </motion.button>
+              <span>Voir les Profils</span>
+            </Link>
           </motion.div>
 
           {/* Stats */}

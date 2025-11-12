@@ -109,7 +109,7 @@ const Footer: FC = () => {
               <li><a href="/" className="hover:text-emerald-400 transition-colors">Accueil</a></li>
               <li><a href="/about" className="hover:text-emerald-400 transition-colors">À propos</a></li>
               <li><a href="/services" className="hover:text-emerald-400 transition-colors">Services</a></li>
-              <li><a href="/talents" className="hover:text-emerald-400 transition-colors">Profils</a></li>
+              <li><a href="/Profils" className="hover:text-emerald-400 transition-colors">Profils</a></li>
               <li><a href="/contact" className="hover:text-emerald-400 transition-colors">Contact</a></li>
             </ul>
           </div>

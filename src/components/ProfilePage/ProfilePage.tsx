@@ -1,6 +1,6 @@
 import HeroProfile from './HeroProfile';
-import AboutProfile from './AboutProfile';
-import MainProfile from './MainProfile';
+import AboutProfile from './DomainePage/AboutProfile';
+import MainProfile from './ProfilsSectionPage/MainProfile';
 
 const ProfilePage = () => {
   return (

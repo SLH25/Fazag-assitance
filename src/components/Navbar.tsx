@@ -53,7 +53,7 @@ const Navbar = () => {
     { name: 'Accueil', href: '/' },
     { name: 'À propos', href: '/about' },
     { name: 'Services', href: '/services' },
-    { name: 'Profils', href: '/talents' },
+    { name: 'Profils', href: '/Profils' },
     { name: 'Témoignages', href: '/testimonials' },
     { name: 'Contact', href: '/contact' },
   ];

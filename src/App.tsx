@@ -7,6 +7,8 @@ import ScrollToTop from './components/ScrollToTop';
 import TestimonialPage from './components/TestimonialPage/TestimonialPage';
 import ContactPage from './components/ContactPage/ContactPage';
 import ProfilePage from './components/ProfilePage/ProfilePage';
+import AllDomainsPage from './components/ProfilePage/DomainePage/AllDomainsPage';
+import AllProfilesPage from './components/ProfilePage/ProfilsSectionPage/AllProfilesPage';
 import Footer from './components/Footer';
 
 function App() {
@@ -20,7 +22,9 @@ function App() {
           <Route path="/about" element={<Aboutpage />} />
           <Route path="/services" element={<ServicePage />} />
           <Route path="/testimonials" element={<TestimonialPage />} />
-          <Route path="/talents" element={<ProfilePage />} />
+          <Route path="/Profils" element={<ProfilePage />} />
+          <Route path="/Profils/domains" element={<AllDomainsPage />} />
+          <Route path="/Profils/profiles" element={<AllProfilesPage />} />
           <Route path="/contact" element={<ContactPage />} />
         </Routes>
       </main>
